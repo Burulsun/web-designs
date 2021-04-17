@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset = 'UTF-8'>
+  <title>homework2</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+      /*  var y=1000;
+        do {
+          document.write(y+"ok")
+        } while (y>100);*/
+    //1
+        var age = 20;
+        if (age<16){
+          document.write("Запрещено")
+        }
+        else{
+          document.write("разрешено")
+        }
+        //2
+        var budget =100;
+        var cost = prompt("Цена: ");
+        if (cost<=budget)
+          document.write("Можно")
+        else
+           document.write("Нельзя")
+
+        //3.1
+        var x;
+        x = 3;
+        var y;
+        y =2;
+        if (x<y){
+          document.write("x = "+ (x=(x+y)/2))
+        }
+        else {
+          document.write("y = " + (y=(x+y)/2))
+        }
+
+
+        // 3.2
+        var x;
+        x =2;
+        var y;
+        y =3;
+        var z;
+        z =1;
+        if ((x+y+z)<100){
+          if (x<y && x<z)
+
+            document.write("x = " + ((z+y)/2))
+          else if (y<x && y<z)
+            document.write("y = " + ((x+z)/2))
+          else if (z <x && z<y)
+            document.write("z = " + ((x+y)/2))
+        else
+          document.write("Сумма больше 100")
+
+        }
+        // 3.3
+        var a;
+        a =1;
+        var b;
+        b =5;
+        var c;
+        c =4;
+
+        var equation = (Math.pow(b,2) - 4*a*c);
+        if (equation >0){
+          var x1= (-b+Math.sqrt(equation))/(2*a)
+          var x2 = (-b-Math.sqrt(equation))/(2*a)
+          document.write(x1 + "</br>" + x2)
+
+        }
+        else if (equation==0){
+          var x = (-b)/2*a
+          document.write(x + "</br>")
+        }
+        else {
+          document.write("Корней не существует")
+        }
+        //3.5
+        var x;
+        x =1;
+        var y;
+        y =-2;
+        if (x>0 && y>0){
+          document.write("I")
+        }
+        else if (x<0 && y>0){
+          document.write("II")
+        }
+        else if (x<0 && y<0){
+          document.write("III")
+        }
+        else if (x>0 && y<0){
+          document.write("IV")
+        }
+        //3.6
+        var x, y, z;
+        x = -1;
+        y = 2;
+        z =3
+        if (x>0){
+          document.write(Math.pow(x,2)+"</br>")
+        }
+        if (y>0){
+          document.write(Math.pow(y,2) +"</br>")
+        }
+        if (z>0){
+          document.write(Math.pow(z,2)+ "</br>")
+        }
+        else {
+          document.write("Число отрицательное")
+        }
+        // 3.7
+        var age = prompt("Сколько вам лет?")
+
+        if (age ==1)
+          document.write("Вам год")
+
+        else if (2<=age && age<=4 ){
+          document.write("Вам "+ age + "года")
+}
+        else if (5<=age && age<=10)
+          document.write("Вам " +age + "лет")
+        else if (age>20){
+          var end = age%10
+          if (end <=5)
+            document.write("Вам "+ age + "года")
+          else
+            document.write("Вам "+ age + "лет")
+        }
+
+
+
+
+      //3.8
+      var n;
+      n =1661
+      if (parseInt(n/1000) == n%10 && parseInt((n/100)%10) == parseInt((n/10)%10)){
+        document.write("Палиндром")
+      }
+      else {
+        document.write("Not Палиндром")
+      }
+      //3.9
+      var x,y,z;
+      x= 2;
+      y =3;
+      z=-4;
+      if (x<y && y<z)
+        document.write(x + "</br>" + y + "</br>" + z+"</br>")
+      else if (x<z && z<y)
+        document.write( x + "</br>" + z + "</br>" + y+"</br>")
+      else if (y<x && x<z)
+        document.write( y + "</br>" + x + "</br>" + z+"</br>")
+      else if (y<z && z<x)
+        document.write( y + "</br>" + z + "</br>" + x+"</br>")
+      else if (z<x && x<y)
+        document.write( z + "</br>" + x + "</br>" + y+"</br>")
+      else if (z<y && y<x)
+        document.write( z + "</br>" + y + "</br>" + x+"</br>")
+
+      //3.10
+      var a,b;
+      a =98;
+      b=6;
+      var c =a%b;
+
+      if (c==0)
+        document.write("Без остатка")
+      else
+        document.write("Остаток " + c)*/
+//3.11
+      var beghour, begmin, endmin, endhour, spenthour, spentmin;
+        beghour = parseInt(prompt("Input the starting hour: "))
+        begmin = parseInt(prompt("Input the starting min: "))
+        endhour = parseInt(prompt("Input the hour when you finished: "))
+        endmin =parseInt(prompt("Input the min when you finished: "))
+
+        spenthour = endhour -beghour;
+        if (spenthour<=0){
+          spenthour += 12
+        }
+        spentmin = endmin - begmin;
+        if (spentmin<=0){
+          spentmin+=60
+          spenthour-=1
+        }
+
+        if (spentmin ==60){
+          spenthour+=1;
+          spentmin-=60
+        }
+
+        document.write(spenthour+' '+spentmin)
+      </script>
+  </body>
+  </html>

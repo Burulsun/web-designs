@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset = 'UTF-8'>
+  <title>Камень-ножницы</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+      //Создаем игру "Камень-ножницы-бумага"
+      var botscore = 0;
+      var userscore =0;
+      do{
+
+
+        var botchoice = Math.floor(Math.random()*3)+1;
+        //document.write("Выбор бота: "+ botchoice)
+        //document.write("</br>")
+        var userchoice = parseInt(prompt("Выберите один из вариантов: 1-камень </br> 2-бумага </br> 3-ножницы "));
+        document.write("</br>")
+        document.write("Ваш выбор : "+ userchoice)
+        document.write("</br>")
+        document.write("Выбор бота: "+ botchoice)
+        document.write("</br>")
+        if (botchoice ==userchoice){
+          botscore+=0;
+          userscore+=0;
+          document.write("Ничья! "+"</br>")
+      }
+        if (userchoice==1 && botchoice == 3){
+          userscore+=1
+          document.write("Вы победили"+" </br>")
+      }
+        if (botchoice==1 && userchoice == 3){
+        botscore+=1
+        document.write("Вы проиграли!"+" </br>")
+    }
+        if (userchoice==1 && botchoice == 2){
+          botscore+=1
+          document.write("Вы проиграли!"+" </br>")
+      }
+
+        if (botchoice==1 && userchoice == 2){
+          userscore+=1
+          document.write("Вы победили!"+" </br>")
+      }
+
+        if (botchoice==2 && userchoice == 3){
+          userscore+=1
+          document.write("Вы победили!"+" </br>")
+      }
+        if (userchoice==2 && botchoice == 3){
+          botscore+=1
+          document.write("Вы проиграли!"+" </br>")
+
+      }
+
+          document.write(botscore)
+          document.write(":")
+          document.write(userscore)
+          if (userscore==3)
+            break;
+          if (botscore==3)
+            break;
+      }
+      while(userscore<=3 || botscore<=3)
+      if (userscore==3)
+        alert("Вы выиграли игру")
+
+      else if (botscore==3)
+        alert("Бот выиграл игру")
+
+      </script>
+  </body>
+  </html>

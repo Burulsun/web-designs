@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset = 'UTF-8'>
+  <title>timeconverter</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+        var secinmin=60;
+        var secinhour = 3600;
+        var time;
+        time = 3689;
+        var hour = parseInt(time/secinhour);
+        time-=hour*secinhour;
+        var min = parseInt(time/secinmin);
+        time -= min*secinmin;
+        document.write(hour+":"+min+":"+time)
+
+
+
+      </script>
+  </body>
+  </html>

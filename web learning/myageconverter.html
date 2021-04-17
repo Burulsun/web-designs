@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset = 'UTF-8'>
+  <title>ageconverter</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+        /*var daysinyear = 365;
+        var daysinmonth = 30;*/
+        var givendays;
+        givendays = 5675;
+        var years = parseInt(givendays/360);
+        givendays-=years*360;
+        var months = parseInt(givendays/30);
+        givendays-=months*30;
+        document.write(years+":"+months+":"+givendays)
+      </script>
+  </body>
+  </html>

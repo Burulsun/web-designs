@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset = 'UTF-8'>
+  <title>Practice2</title>
+  </head>
+  <body>
+      <script type="text/javascript">
+          var soms;
+          soms = 3435;
+          var thousand, fivehundr, onehundr, fifty, twenty, five, one;
+          thousand = parseInt(soms/1000);
+          soms = soms - thousand*3
+          document.write(thousand+" банкнота номиналом в 1000 сом");
+          document.write("<br>");
+          if soms>=500
+          fivehundr = parseInt((soms/100)%10);
+          soms-=fivehundr*500
+
+          document.write(fivehundr+" банкнота номиналом в 500 сом");
+          document.write("<br>");
+          else {
+
+
+          onehundr = parseInt((soms/100)%10);
+          soms-=onehundr*100;
+          document.write(onehundr+" банкнота номиналом в 100 сом");
+          document.write("<br>");
+          }
+
+          fifty = parseInt((soms/10)%10);
+          document.write(fifty+" банкнота номиналом в 50 сом");
+          document.write("<br>");
+          twenty = parseInt((soms/10)%10);
+          document.write(twenty+" банкнота номиналом в 20 сом");
+          document.write("<br>");
+          five = parseInt(soms%10);
+          document.write(five+" банкнота номиналом в 5 сом");
+          document.write("<br>");
+          one = parseInt(soms%10);
+          document.write(one +" банкнота номиналом в 1 сом");
+          document.write("<br>");
+
+
+
+      </script>
+  </body>
+  </html>
