@@ -1,0 +1,78 @@
+.header{
+  width: 100%;
+  height: 70px;
+  border: 1px solid brown;
+  background-color: brown;
+  position: fixed;
+  z-index: 100;
+
+}
+.inblock{
+  width: 80%;
+  height: 60px;
+
+  background-color: brown;
+  margin-left: 50px;
+
+}
+.inblock img{
+  margin-left: 100px;
+
+}
+.inblock a{
+  margin-left: 35% ;
+}
+
+.films{
+  border: 2px solid red;
+  width: 70%;
+
+  padding-left: 200px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+
+
+
+}
+.photo{
+  max-width: 210px;
+  max-height: 320px;
+  border: 1px solid red;
+  margin-left: 55px;
+  margin-top: 50px;
+  position: relative;
+
+}
+
+#logo{
+  height: 50px;
+  width: 100px;
+
+}
+.photo:hover{
+  background: black;
+  z-index: 50;
+}
+.photo img:hover{
+
+  opacity: 0;
+
+
+
+}
+.filmcontent{
+  color: white;
+  z-index: -2;
+  position: absolute;
+
+
+  top: 20px;
+  left:20px;
+  right: 20px;
+}

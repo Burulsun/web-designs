@@ -1,0 +1,25 @@
+h1, h3{
+  color: white;
+ text-align: center;
+}
+h1{
+  font-family: sans-serif;
+}
+h3{
+  font-family: fantasy;
+}
+img{
+  width: 200;
+  height: 200;
+  align: center;
+  background-color: #a4bafa
+}
+
+video{
+  width: 300;
+  height: 200;
+
+}
+body{
+  background-color: #a4bafa
+}
