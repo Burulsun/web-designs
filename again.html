@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Redoing Exam</title>
+<style>
+div{
+border: 2px solid black; }
+#c{
+	color: red;
+}
+.headbox{
+	background-color: red;
+	width: 50%;
+	height: 35px;
+}
+h3{
+	padding-right: 20px;
+	color: white;
+}
+.mainbox{
+display: flex;
+	width: 50%;
+}
+button{
+	background-color: red;}
+.inputs{
+flex;1}
+	</style>
+</head>
+
+<body>
+<div class="headbox"><h3>Blood Donation</h3></div>
+
+
+<div class = "mainbox">
+<form>
+	<div><label for = "name"> Full Name <span id ="c">*</span></label>
+<input  required type="text" id="name" name="user_name"></div>
+
+	<div><label for = "type" > Type
+<select name = "type">
+<option>Select Type</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+</label></div>
+
+	<div><label for = "blood"> Blood Group
+<select name = "bloodgroup">
+<option>Select Blood Group</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select
+</label></div>
+
+	<div><label for = "states">State
+<select name = "state">
+<option>Select</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+</label></div>
+
+	<div><label for = "address"> Address
+<div class = "inputs"><textarea id = "address" name = "user_address"></textarea></div>
+</label></div>
+
+
+	<div><label for = "email"> E-mail <span id ="c">*</span>
+<div class = "inputs"><input required  type="email" name="user_email"></label></div></div>
+
+	<div><label for = "password"> Password</label>
+<div class = "inputs"><input type="password" name="user_password"></div></div>
+
+
+	<div><label for = "password"> Confirm Password</label>
+<div class = "inputs"><input type="password" name="confirm_password"></div></div>
+
+
+	<div><label for = "gender"> Gender <span id ="c">*</span></label>
+<div class = "inputs"><label>Male<input required  type="radio" value = "Male"></label>
+<label>Female<input type="radio" value = "Female"></label></div></div>
+
+<div id = "submit"><button>Submit</button></div>
+
+</div>
+
+
+</form>
+</body>
+</html>
